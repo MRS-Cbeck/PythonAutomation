@@ -37,7 +37,7 @@ def track_active_window(target_title, interval=0.5):
                     if title != last_active_window:
                         print("Active window changed:", title)
                         last_active_window = title
-                        if target_title.lower() in title.lower():
+                        if target_title.lower() in title.lower() and "Login" not in title:
                             caps_lock_state = get_capslock_state()
                             if caps_lock_state is False:
                                 print("Misys Manufacturing window detected. Enabling Caps Lock.")
