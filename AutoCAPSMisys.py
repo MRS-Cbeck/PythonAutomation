@@ -65,3 +65,5 @@ def track_active_window(target_title, interval=0.5):
 if __name__ == "__main__":
     print("Starting to track active window changes...")
     track_active_window(" - MRS")
+
+print("Taking Dumps....")
